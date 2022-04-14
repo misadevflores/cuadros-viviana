@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+*{
+	padding: 0px;
+	margin: 0px;
+}
+/* cuerpo de la pagina */
+/*-Establecer que el color de fondo te toda la página sea gris muy oscuro: #232323 .*/
+body{
+	background:#232323;
+	padding: 10px;
+}
+/* H1 */
+/*-Establecer que el color del contenido del <h1> con tu nombre sea blanco, esté
+centrado y tenga una tipografía distinta a la que está por defecto.
+*/
+h1{
+	color:#fff;
+	text-align: center;
+	font-family: sans-serif;
+	font-family: 'Inter', sans-serif;
+}
+/* div principal */
+.content{
+	margin: auto;
+	width:50%; /* BORRA ESTO SI DESEA QUE UNA FILA DE 4 CUADROS */
+}
+/* clase Div internos */
+/* -Crear una clase común a los 4 Divs del interior que les haga tener unas dimensiones
+de 300x300 px, los bordes redondeados y un margin entre ellos. Usa esta clase para
+hacer que los 4 divs se muestren en una disposición de 2x2 */
+.div_int{
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	display: inline-block;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px, rgba(0, 0, 0, 0.3) 0px 10px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/* id de div interno */
+/*-Asignar un ID para cada Div interior para que tengan un color distinto.*/
+#int1{
+ background:#B7D968;
+}
+#int2{
+ background:#E04644;	
+}
+#int3{
+ background:#555E7B;	
+}
+#int4{
+ background:#B576AD;	
+}
+
+/*Hacer que los 4 Divs del interior cambien de color (un color distinto cada uno) al pasar
+el ratón por encima.*/
+#int1:hover{
+ background:#8EF0A8;
+}
+#int2:hover{
+ background:#FA07E5;	
+}
+#int3:hover{
+ background:#7ccce5;	
+}
+#int4:hover{
+ background:#FDE47F;	
+}
